@@ -21,9 +21,14 @@ namespace Myproject.Repositories
             var director = await _context.Directors.FirstOrDefaultAsync(b=>b.DirectorId==id);
             if (director == null)
                 return;
+<<<<<<< HEAD
+            _context.Remove(director);
+            await _context.SaveChangesAsync();
+=======
              _context.Remove(director);
             await _context.SaveChangesAsync();
 
+>>>>>>> master
         }
 
         public async Task<IEnumerable<Director>> GetAll()

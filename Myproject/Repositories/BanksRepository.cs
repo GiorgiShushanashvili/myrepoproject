@@ -29,6 +29,7 @@ namespace Myproject.Repositories
                 return;
             }
             else { _context.Remove(bank); }
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Banks>> GetAll()
