@@ -12,6 +12,7 @@ namespace Myproject.Repositories
         public async Task<Director> Add(Director entity)
         {
             await _context.Directors.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 
@@ -21,6 +22,7 @@ namespace Myproject.Repositories
             if (director == null)
                 return;
             _context.Remove(director);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Director>> GetAll()

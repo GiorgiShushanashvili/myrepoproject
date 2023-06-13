@@ -17,6 +17,7 @@ namespace Myproject.Repositories
         public async Task<Banks> Add(Banks entity)
         {
             await _context.Banks.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 
@@ -28,6 +29,7 @@ namespace Myproject.Repositories
                 return;
             }
             else { _context.Remove(bank); }
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Banks>> GetAll()
