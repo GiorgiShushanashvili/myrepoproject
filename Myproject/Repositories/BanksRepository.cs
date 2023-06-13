@@ -17,6 +17,7 @@ namespace Myproject.Repositories
         public async Task<Banks> Add(Banks entity)
         {
             await _context.Banks.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 

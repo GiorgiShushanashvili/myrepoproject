@@ -16,6 +16,7 @@ namespace Myproject.Repositories
         public async Task<ContactPerson> Add(ContactPerson entity)
         {
             await _context.ContactPerson.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 
@@ -26,6 +27,7 @@ namespace Myproject.Repositories
             {
                 _context.Remove(person);
             }
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<ContactPerson>> GetAll()

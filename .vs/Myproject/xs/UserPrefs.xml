@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{856A5E5E-3E7F-467C-8126-432B033094CC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Myproject/Controllers/ContactPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Myproject/Services/ContactPersonService.cs">
     <Files>
       <File FileName="Myproject/Controllers/DirectorController.cs" />
       <File FileName="Myproject/Services/DirectorService.cs" />
       <File FileName="Myproject/Repositories/DirectorRepository.cs" />
-      <File FileName="Myproject/Controllers/ContactPersonController.cs" Line="95" Column="50" />
+      <File FileName="Myproject/Controllers/ContactPersonController.cs" />
       <File FileName="Myproject/Repositories/ContactPersonRepository.cs" />
-      <File FileName="Myproject/Services/ContactPersonService.cs" />
+      <File FileName="Myproject/Services/ContactPersonService.cs" Line="17" Column="59" />
+      <File FileName="Myproject/Repositories/IRepositoryInterface.cs" />
+      <File FileName="Myproject/Services/IContactPersonInterface.cs" />
+      <File FileName="Myproject/Services/BankService.cs" />
+      <File FileName="Myproject/Controllers/BanksController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,17 +22,26 @@
               <Node name="Models" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="Users" expanded="True">
+                <Node name="giorgishushanashvili" expanded="True">
+                  <Node name="Projects" expanded="True">
+                    <Node name="Myproject" expanded="True">
+                      <Node name="Myproject" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Myproject PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Myproject PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>
